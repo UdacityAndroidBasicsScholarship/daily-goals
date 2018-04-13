@@ -1,9 +1,9 @@
 # daily-goals
 This application is a collaborative project made by the Google Udacity Android Basics Scholars.
 
-#Project Name: Daily Goals App
+# Project Name: Daily Goals App
 
-#Idea:
+## Idea:
 
 Daily goals app. An app that reminds you of your daily goals set. It will showcase our performance in the form of pie chart. It will have database(say using Room)
 to store performance. 
