@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/dg"
+    android:background="@drawable/dt"
+    android:scaleType="centerCrop"
     tools:context="com.example.dhananjay.dailygoals.MainActivity">
 
     <LinearLayout
@@ -14,8 +15,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="PLAN FOR"
             android:textSize="30sp"
             android:padding="20dp"
@@ -37,8 +39,9 @@
             </android.support.v7.widget.RecyclerView>
         </RelativeLayout>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="ONGOING..."
             android:textSize="30sp"
             android:padding="20dp"
@@ -60,8 +63,9 @@
             </android.support.v7.widget.RecyclerView>
         </RelativeLayout>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="COMPLETED/MISSED"
             android:textSize="30sp"
             android:padding="20dp"
@@ -83,8 +87,9 @@
             </android.support.v7.widget.RecyclerView>
         </RelativeLayout>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="ACHIEVEMENTS"
             android:textSize="30sp"
             android:padding="20dp"
@@ -109,7 +114,8 @@
         <android.support.design.widget.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
             app:menu="@menu/navigation"/>
 
     </LinearLayout>
