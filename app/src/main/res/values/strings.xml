@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Daily goals</string>
+    <string name="planfor">PLAN FOR</string>
+    <string name="ongoing">ONGOING...</string>
+    <string name="completeandmiss">COMPLETED/MISSED</string>
+    <string name="achievements">ACHIEVEMENTS</string>
+    <string name="today">TODAY</string>
+    <string name="tomorrow">TOMORROW</string>
+    <string name="nextday">NEXT DAY</string>
+    <string name="breakfast">BREAKFAST</string>
+    <string name="study">STUDY</string>
+    <string name="lunch">LUNCH</string>
+    <string name="games">GAMES</string>
+    <string name="dinner">DINNER</string>
 </resources>
