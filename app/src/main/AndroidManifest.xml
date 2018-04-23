@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WelcomeScreenActivity"
+            android:theme="@style/WelcomeScreenTheme"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

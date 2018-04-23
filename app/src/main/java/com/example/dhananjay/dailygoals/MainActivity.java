@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.stephentuso.welcome.WelcomeHelper;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Items1> item1List;
     ArrayList<Items2> item2List;
     ArrayList<Items3> item3List;
+
+    // Variable to create a Welcome Screen
+    private WelcomeHelper welcomeScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,5 +67,15 @@ public class MainActivity extends AppCompatActivity {
         recyclerView3.setLayoutManager(rvlayoutmanager3);
         TextAdapter3 adapter3=new TextAdapter3(this,item3List);
         recyclerView3.setAdapter(adapter3);
+
+        // Show the welcome screen
+        welcomeScreen = new WelcomeHelper(this, WelcomeScreenActivity.class);
+        welcomeScreen.show(savedInstanceState);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        welcomeScreen.onSaveInstanceState(outState);
     }
 }
