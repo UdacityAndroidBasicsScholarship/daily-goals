@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription">
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/compass1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_guide" />
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/compass2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/compass1"
+        android:layout_alignStart="@+id/compass1"
+        android:layout_alignTop="@+id/compass4"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_guide" />
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/compass3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/compass2"
+        android:layout_toEndOf="@+id/compass2"
+        android:layout_toRightOf="@+id/compass2"
+        android:src="@drawable/ic_guide" />
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/compass4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/compass1"
+        android:layout_marginTop="132dp"
+        android:layout_toEndOf="@+id/compass3"
+        android:layout_toRightOf="@+id/compass3"
+        android:src="@drawable/ic_guide" />
+
+    <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/compass5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/compass2"
+        android:layout_toEndOf="@+id/compass2"
+        android:layout_toRightOf="@+id/compass2"
+        android:src="@drawable/ic_guide" />
+</RelativeLayout>
