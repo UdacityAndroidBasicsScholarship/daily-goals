@@ -12,7 +12,6 @@ import android.view.View;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
-
 public class BottomNavigationBehavior extends CoordinatorLayout.Behavior<BottomNavigationView> {
 
         /**
@@ -32,7 +31,6 @@ public class BottomNavigationBehavior extends CoordinatorLayout.Behavior<BottomN
     public BottomNavigationBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
-
 
     /**
      * @param coordinatorLayout the CoordinatorLayout with which the behavior is associated
