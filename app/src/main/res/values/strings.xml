@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Daily goals</string>
+    <string name="planfor">PLAN FOR</string>
+    <string name="ongoing">ONGOING...</string>
+    <string name="completeandmiss">COMPLETED/MISSED</string>
+    <string name="achievements">ACHIEVEMENTS</string>
+    <string name="today">TODAY</string>
+    <string name="tomorrow">TOMORROW</string>
+    <string name="nextday">NEXT DAY</string>
+    <string name="breakfast">BREAKFAST</string>
+    <string name="study">STUDY</string>
+    <string name="lunch">LUNCH</string>
+    <string name="games">GAMES</string>
+    <string name="dinner">DINNER</string>
+
+    <!-- Strings for titles of each page of the welcome screen -->
+    <string name="title_welcome">Welcome to Daily Goals</string>
+    <string name="title_life_guide">Life Guide and Assistant</string>
+    <string name="title_time_manager">Time Manager</string>
+    <string name="title_performance">View Performance</string>
+
+    <!-- Strings for the descriptions of each page of the welcome screen -->
+    <string name="description_welcome">
+        An app that reminds you of your daily goals set. Motivating you all along!
+    </string>
+    <string name="description_life_guide">
+        An assistant which will guide you throughout your life. Also manages your day and how you spend your time.
+    </string>
+    <string name="description_time_manager">
+        It will give you optimized suggestions to spend your time effectively by considering how you spend your time, the app will build your schedule and will guide you accordingly.
+    </string>
+    <string name="description_performance">
+        View your performance in terms of stunning Pie charts!
+    </string>
 </resources>
