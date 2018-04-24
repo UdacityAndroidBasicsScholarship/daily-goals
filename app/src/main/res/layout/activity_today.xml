@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="TodayActivity"
-    android:background="@drawable/marble"
     android:layout_width = "fill_parent"
     android:layout_height = "fill_parent"
     android:scrollbars = "vertical">
