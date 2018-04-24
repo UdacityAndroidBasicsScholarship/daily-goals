@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="TodayActivity"
+    android:background="@drawable/marble"
+    android:layout_width = "fill_parent"
+    android:layout_height = "fill_parent"
+    android:scrollbars = "vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text="Task :"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/simple_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter task Name Here"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:inputType="textCapWords" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/type"
+                android:text="Type"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+
+            <Spinner
+                android:id = "@+id/simple_spinner"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/from"
+                android:text="From :"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+
+            <TimePicker
+                android:id = "@+id/simpleTimePicker"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:timePickerMode = "spinner" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id = "@+id/simpleCheckBox"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "Notify at : "
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TimePicker
+                android:id = "@+id/notify"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:timePickerMode = "spinner" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id = "@+id/MK"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "Make it habit :"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <CheckBox
+                android:id = "@+id/daily"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text = "Daily "
+                android:textSize="15sp" />
+
+            <CalendarView
+                android:id = "@+id/simpleCalendarView"
+                android:layout_width = "fill_parent"
+                android:layout_height = "fill_parent"
+                android:layout_marginTop="10dp"
+                android:firstDayOfWeek = "2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id = "@+id/reminder"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "Super reminder "
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskReminder"
+                android:text="Task is started"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+
+            <Switch
+                android:id = "@+id/simpleSwitch"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginLeft="60dp"
+                android:checked = "false"
+                android:text = "Enable Notification"
+                android:textOff = "Off"
+                android:textOn = "On" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id = "@+id/simpleButton1"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerHorizontal = "true"
+                android:layout_marginTop = "100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp"
+                android:background = "#5C6BC0"
+                android:hint = "Add another activity "
+                android:textColorHint = "#fff"
+                android:textSize = "20sp" />
+
+            <Button
+                android:id = "@+id/simpleButton2"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerHorizontal = "true"
+                android:layout_marginTop = "100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background = "#5C6BC0"
+                android:hint = "Set"
+                android:textColorHint = "#fff"
+                android:textSize = "20sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

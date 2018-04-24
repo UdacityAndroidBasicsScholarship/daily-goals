@@ -19,6 +19,7 @@
         <activity android:name=".WelcomeScreenActivity"
             android:theme="@style/WelcomeScreenTheme"
             android:screenOrientation="portrait"/>
+        <activity android:name=".TodayActivity"></activity>
     </application>
 
 </manifest>
