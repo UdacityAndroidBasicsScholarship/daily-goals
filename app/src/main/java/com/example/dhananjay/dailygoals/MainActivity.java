@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Items3> item3List;
 
     // Variable to create a Welcome Screen
+
     private WelcomeHelper welcomeScreen;
 
     @Override
@@ -67,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView3.setLayoutManager(rvlayoutmanager3);
         TextAdapter3 adapter3=new TextAdapter3(this,item3List);
         recyclerView3.setAdapter(adapter3);
+        
+         ItemClickSupport.addTo( recyclerView ).setOnItemClickListener( new ItemClickSupport.OnItemClickListener() {
+            @Override
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                startActivity( new Intent(MainActivity.this,TodayActivity.class) );
+            }
+        } );
 
         // Show the welcome screen
         welcomeScreen = new WelcomeHelper(this, WelcomeScreenActivity.class);
