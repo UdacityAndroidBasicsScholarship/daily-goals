@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "891850808493",
+    "firebase_url": "https://daily-goals-a9c53.firebaseio.com",
+    "project_id": "daily-goals-a9c53",
+    "storage_bucket": "daily-goals-a9c53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891850808493:android:def136320218cb3a",
+        "android_client_info": {
+          "package_name": "com.example.dhananjay.dailygoals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891850808493-9ddh59ootunrok7pfi5kplm48h4jshv5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dhananjay.dailygoals",
+            "certificate_hash": "dc402beccbec5c64ee1f65fbbb06ddf429efe45a"
+          }
+        },
+        {
+          "client_id": "891850808493-atp6khfqm1jv21o4a1cqnm8n2jf5f9ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF-ifz80FZWLZJaFYn4uky1Vx1kRNdPG8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891850808493-atp6khfqm1jv21o4a1cqnm8n2jf5f9ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
