@@ -130,7 +130,8 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
+
+                      android:layout_marginTop="10dp"
                 android:text = "Daily "
                 android:textSize="15sp" />
 
@@ -171,8 +172,10 @@
                 android:id = "@+id/simpleSwitch"
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="50dp"
                 android:checked = "false"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
                 android:text = "Enable Notification"
                 android:textOff = "Off"
                 android:textOn = "On" />
@@ -189,12 +192,13 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
                 android:layout_centerHorizontal = "true"
-                android:layout_marginTop = "100dp"
+                android:layout_marginTop = "70dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginBottom="20dp"
-                android:background = "#5C6BC0"
+                android:background = "@drawable/button_round"
                 android:hint = "Add another activity "
                 android:textColorHint = "#fff"
+                android:padding="10dp"
                 android:textSize = "20sp" />
 
             <Button
@@ -202,10 +206,10 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
                 android:layout_centerHorizontal = "true"
-                android:layout_marginTop = "100dp"
+                android:layout_marginTop = "70dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="20dp"
-                android:background = "#5C6BC0"
+                android:background = "@drawable/button_round"
                 android:hint = "Set"
                 android:textColorHint = "#fff"
                 android:textSize = "20sp"/>
