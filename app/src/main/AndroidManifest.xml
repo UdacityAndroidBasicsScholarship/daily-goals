@@ -20,6 +20,9 @@
             android:theme="@style/WelcomeScreenTheme"
             android:screenOrientation="portrait"/>
         <activity android:name=".TodayActivity"></activity>
+        <activity android:name=".PopupActivity"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <receiver android:name=".NotificationActivity"></receiver>
     </application>
-
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"></uses-permission>
 </manifest>
