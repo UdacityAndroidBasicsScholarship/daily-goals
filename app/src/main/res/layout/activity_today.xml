@@ -6,6 +6,7 @@
     tools:context="TodayActivity"
     android:layout_width = "fill_parent"
     android:layout_height = "fill_parent"
+    android:background="#fcfce8"
     android:scrollbars = "vertical">
 
     <LinearLayout
@@ -23,6 +24,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/name"
                 android:text="Task :"
+                android:fontFamily="sans-serif-smallcaps"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
@@ -52,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/type"
                 android:text="Type"
+                android:fontFamily="sans-serif-smallcaps"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
@@ -66,6 +69,12 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_margin="14dp"
+            android:background="@android:color/darker_gray"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,18 +85,26 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/from"
                 android:text="From :"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_gravity="center_vertical"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
                 android:textColor="@android:color/black"/>
 
             <TimePicker
                 android:id = "@+id/simpleTimePicker"
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
-                android:timePickerMode = "spinner" />
+                android:paddingLeft="38dp"
+                android:timePickerMode ="spinner"  />
 
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_margin="14dp"
+            android:background="@android:color/darker_gray"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,8 +115,10 @@
                 android:id = "@+id/simpleCheckBox"
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
+                android:layout_gravity="center_vertical"
                 android:text = "Notify at : "
-                android:textSize="20sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"/>
 
@@ -110,6 +129,11 @@
                 android:timePickerMode = "spinner" />
 
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_margin="14dp"
+            android:background="@android:color/darker_gray"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,8 +144,9 @@
                 android:id = "@+id/MK"
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
-                android:text = "Make it habit :"
-                android:textSize="20sp"
+                android:text = "Make it a habit :"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"/>
 
@@ -130,8 +155,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
                 android:layout_marginLeft="10dp"
-
-                      android:layout_marginTop="10dp"
+                android:layout_marginTop="10dp"
                 android:text = "Daily "
                 android:textSize="15sp" />
 
@@ -144,6 +168,12 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_margin="14dp"
+            android:background="@android:color/darker_gray"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -154,8 +184,9 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
                 android:text = "Super reminder "
-                android:textSize="20sp"
-                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
                 android:layout_marginLeft="10dp"/>
 
             <TextView
@@ -163,9 +194,10 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/taskReminder"
                 android:text="Task is started"
+                android:fontFamily="sans-serif-smallcaps"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="50dp"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="@android:color/black"/>
 
             <Switch
@@ -174,13 +206,20 @@
                 android:layout_height = "wrap_content"
                 android:layout_marginLeft="50dp"
                 android:checked = "false"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_marginTop="20dp"
                 android:text = "Enable Notification"
+                android:fontFamily="sans-serif-smallcaps"
                 android:textOff = "Off"
                 android:textOn = "On" />
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_margin="14dp"
+            android:background="@android:color/darker_gray"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -192,7 +231,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
                 android:layout_centerHorizontal = "true"
-                android:layout_marginTop = "70dp"
+                android:layout_marginTop = "25dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginBottom="20dp"
                 android:background = "@drawable/button_round"
@@ -206,7 +245,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
                 android:layout_centerHorizontal = "true"
-                android:layout_marginTop = "70dp"
+                android:layout_marginTop = "25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="20dp"
                 android:background = "@drawable/button_round"
