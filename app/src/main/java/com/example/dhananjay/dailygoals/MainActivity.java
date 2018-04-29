@@ -1,11 +1,15 @@
 package com.example.dhananjay.dailygoals;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.content.Intent;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import com.stephentuso.welcome.WelcomeHelper;
 
@@ -50,21 +54,25 @@ public class MainActivity extends AppCompatActivity {
         item2List.add(new Items2(R.drawable.tick));
         item2List.add(new Items2(R.drawable.wrong));
         item3List.add(new Items3(R.drawable.achievements));
+
         LinearLayoutManager layoutmanager=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         RecyclerView.LayoutManager rvlayoutmanager=layoutmanager;
         recyclerView.setLayoutManager(rvlayoutmanager);
         TextAdapter adapter=new TextAdapter(this,itemList);
         recyclerView.setAdapter(adapter);
+
         LinearLayoutManager layoutmanager1=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         RecyclerView.LayoutManager rvlayoutmanager1=layoutmanager1;
         recyclerView1.setLayoutManager(rvlayoutmanager1);
         TextAdapter1 adapter1=new TextAdapter1(this,item1List);
         recyclerView1.setAdapter(adapter1);
+
         LinearLayoutManager layoutmanager2=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         RecyclerView.LayoutManager rvlayoutmanager2=layoutmanager2;
         recyclerView2.setLayoutManager(rvlayoutmanager2);
         TextAdapter2 adapter2=new TextAdapter2(this,item2List);
         recyclerView2.setAdapter(adapter2);
+
         LinearLayoutManager layoutmanager3=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         RecyclerView.LayoutManager rvlayoutmanager3=layoutmanager3;
         recyclerView3.setLayoutManager(rvlayoutmanager3);
@@ -78,9 +86,116 @@ public class MainActivity extends AppCompatActivity {
             }
         } );
 
+
+
+
+
+        recyclerView2.addOnItemTouchListener(new RecyclerTouchListener(this,
+                recyclerView2, new ClickListener() {
+            @Override
+            public void onClick(View view, final int position) {
+                //Values are passing to activity & to fragment as well
+
+
+                if(position == 0)
+                {
+                    Intent intent = new Intent(getApplicationContext(), Goals_Completed.class);
+                    startActivity(intent);
+                }
+                if(position == 1)
+                {
+                    Intent intent = new Intent(getApplicationContext(), Goals_Missed.class);
+                    startActivity(intent);
+                }
+
+            }
+            @Override
+            public void onLongClick(View view, int position) {
+
+                if(position == 0)
+                {
+                    Toast.makeText(getApplicationContext(), "Daily Goals Completed by You",
+                        Toast.LENGTH_SHORT).show();
+                }
+                if(position == 1)
+                {
+                    Toast.makeText(getApplicationContext(), "Daily Goals Missed by You",
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        }));
+        recyclerView3.addOnItemTouchListener(new RecyclerTouchListener(this,
+                recyclerView3, new ClickListener() {
+            @Override
+            public void onClick(View view, final int position) {
+                //Values are passing to activity & to fragment as well
+
+
+
+                    Intent intent = new Intent(getApplicationContext(), Achievements.class);
+                    startActivity(intent);
+
+
+            }
+            @Override
+            public void onLongClick(View view, int position) {
+
+
+                    Toast.makeText(getApplicationContext(), "Your Achievements",
+                            Toast.LENGTH_SHORT).show();
+
+            }
+        }));
+
         // Show the welcome screen
         welcomeScreen = new WelcomeHelper(this, WelcomeScreenActivity.class);
         welcomeScreen.show(savedInstanceState);
+    }
+
+
+    class RecyclerTouchListener implements RecyclerView.OnItemTouchListener{
+
+        private ClickListener clicklistener;
+        private GestureDetector gestureDetector;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recycleView, final ClickListener clicklistener){
+
+            this.clicklistener=clicklistener;
+            gestureDetector=new GestureDetector(context,new GestureDetector.SimpleOnGestureListener(){
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child=recycleView.findChildViewUnder(e.getX(),e.getY());
+                    if(child!=null && clicklistener!=null){
+                        clicklistener.onLongClick(child,recycleView.getChildAdapterPosition(child));
+                    }
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+            View child=rv.findChildViewUnder(e.getX(),e.getY());
+            if(child!=null && clicklistener!=null && gestureDetector.onTouchEvent(e)){
+                clicklistener.onClick(child,rv.getChildAdapterPosition(child));
+            }
+
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+        }
     }
 
     @Override

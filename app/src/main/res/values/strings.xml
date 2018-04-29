@@ -32,4 +32,7 @@
     <string name="description_performance">
         View your performance in terms of stunning Pie charts!
     </string>
+    <string name="goals_missed">GOALS MISSED</string>
+    <string name="goals_completed">GOALS COMPLETED</string>
+    <string name="your_achievements">YOUR ACHIEVEMENTS</string>
 </resources>
