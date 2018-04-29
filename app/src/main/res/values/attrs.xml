@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_click_support" type="id" />
+
+    <declare-styleable name="core_area">
+        <attr name="underline_color"
+            format="color"/>
+        <attr name="underline_selected_color"
+            format="color"/>
+        <attr name="hint_color"
+            format="color"/>
+        <attr name="text_color"
+            format="color"/>
+        <attr name="hint_text"
+            format="string"/>
+        <attr name="codes"
+            format="integer"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="CustomTextView">
+
+        <attr name="font" format="string" />
+
+    </declare-styleable>-->
+
+</resources>
