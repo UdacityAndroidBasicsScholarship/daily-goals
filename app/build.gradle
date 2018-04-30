@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+// change gradle version from 4.1 to 4.4
+// in Android Studio go to Project > Right Click > Project Structure>Change current version 4.1 to 4.4> OK
+
 android {
     compileSdkVersion 27
     defaultConfig {
