@@ -4,18 +4,18 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home"
+        android:title="@string/home"
         android:iconTint="@color/colorPrimary" />
 
     <item
         android:id="@+id/Activity"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="Activity"/>
+        android:title="@string/activity" />
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_overview"
-        android:title="Overview" />
+        android:title="@string/overview" />
 
 
 

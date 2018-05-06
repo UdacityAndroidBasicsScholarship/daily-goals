@@ -13,6 +13,29 @@
     <string name="games">GAMES</string>
     <string name="dinner">DINNER</string>
 
+    <!-- String for activity pou-up -->
+    <string name="taskadded">Task Added</string>
+
+    <!-- Strings for activity_today -->
+    <string name="task">Task :</string>
+    <string name="namehint">Enter task Name Here</string>
+    <string name="type">Type</string>
+    <string name="from">From :</string>
+    <string name="notify">Notify at : </string>
+    <string name="make_habit">Make it a habit :</string>
+    <string name="daily">Daily </string>
+    <string name="super_remainder">Super reminder</string>
+    <string name="task_started">Task is started</string>
+    <string name="enable_Notification">Enable Notification</string>
+    <string name="add_activity">Add another activity</string>
+    <string name="button_hint">Set</string>
+
+    <!-- String for navigation -->
+    <string name="home">Home</string>
+    <string name="activity">Activity</string>
+    <string name="overview">OverView</string>
+
+
     <!-- Strings for titles of each page of the welcome screen -->
     <string name="title_welcome">Welcome to Daily Goals</string>
     <string name="title_life_guide">Life Guide and Assistant</string>
