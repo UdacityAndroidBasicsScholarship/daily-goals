@@ -25,7 +25,7 @@
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:padding="20dp"
-                android:text="PLAN FOR"
+                android:text="@string/planfor"
                 android:textColor="#ffffff"
                 android:textSize="30sp" />
 
@@ -44,7 +44,7 @@
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:padding="20dp"
-                android:text="ONGOING..."
+                android:text="@string/ongoing"
                 android:textColor="#ffffff"
                 android:textSize="30sp" />
 
@@ -63,7 +63,7 @@
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:padding="20dp"
-                android:text="COMPLETED/MISSED"
+                android:text="@string/completeandmiss"
                 android:textColor="#ffffff"
                 android:textSize="30sp" />
 
@@ -82,7 +82,7 @@
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:padding="20dp"
-                android:text="ACHIEVEMENTS"
+                android:text="@string/achievements"
                 android:textColor="#ffffff"
                 android:textSize="30sp" />
 
