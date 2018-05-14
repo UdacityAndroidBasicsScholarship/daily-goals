@@ -1,4 +1,4 @@
-package com.example.dhananjay.dailygoals;
+ package com.example.dhananjay.dailygoals;
 
 import android.app.AlarmManager;
 import android.app.NotificationManager;
@@ -20,13 +20,14 @@ public class NotificationActivity extends BroadcastReceiver {
         Intent repeatIntent=new Intent(context,MainActivity.class);
         repeatIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent=PendingIntent.getActivity(context,100,repeatIntent,PendingIntent.FLAG_UPDATE_CURRENT);
-
+        Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder builder=new NotificationCompat.Builder(context)
                 .setContentIntent(pendingIntent)
                 .setSmallIcon(R.drawable.tick)
                 .setContentTitle("Goal Notification")
                 .setContentText("Time to perform"+"\n"+"task"+"\n"+"Complete your goal")
-                .setAutoCancel(true);
+                .setAutoCancel(true)
+                .setSound(soundUri);
         notificationManager.notify(100,builder.build());
     }
 }
